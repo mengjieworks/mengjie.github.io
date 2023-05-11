@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Poppins&family=Rowdies&family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Rowdies&family=Rubik&display=swap');
+
+body{
+    font-family: 'Rubik','Noto Sans TC', sans-serif;
+    background-color:#f8f8eb;
+    padding: 0;
+    margin: 0;
+}
+
+h2{
+  color: rgb(102, 102, 102);
+  text-align: center;
+  line-height: 1.5em;
+  letter-spacing: 0.08em;
+}
+h2 i{
+    color: #c5e43c;
+}
+h5{
+  color: slategrey;
+  line-height: 1.5em;
+  letter-spacing: 0.08em;
+}
+
+p{
+    line-height: 1.5em;
+    letter-spacing: 0.08em;
+}
+button{
+    border: 0px;
+    background-color: #34343400;
+    text-decoration: underline;
+}
+/* navbar&top logo */
+nav{
+    margin-bottom: 1.5em;
+    border: 1px solid #343434;
+}
+
+.navbar-toggler{
+    border: 0px;
+}
+
+.top-logo h3{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: #646464;
+}
+.top-icon a i{
+    color: #646464;
+    font-size: 1.5em;
+    margin-right: .5em;
+}
+.top-icon a i:hover{
+    color: #c5e43c;
+    font-size: 1.5em;
+    margin-right: .5em;
+}
+.nav-item a:hover{
+    color: #c5e43c;
+    text-decoration: underline;
+}
+/* 個人首圖介紹區 */
+
+.personaltext h3{
+    background-image: linear-gradient(rgba(0 0 0 / 0)70%,#c5e43c 70%);
+    /* text-decoration: #c5e43c wavy underline 5px;
+    -webkit-text-decoration:#c5e43c wavy underline 5px; */
+}
+.personalimg{
+    padding: 5px;
+    position: relative;
+  
+}
+.personalimg img{
+    border-radius: 31% 69% 28% 72% / 68% 31% 69% 32% ;
+    animation-name: picmove;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+}
+@keyframes picmove{
+    0%   {border-radius: 43% 57% 35% 65% / 59% 38% 62% 41% ;}
+    25%  {border-radius: 58% 42% 54% 46% / 47% 55% 45% 53% ;}
+    50%  {border-radius: 71% 29% 72% 28% / 32% 70% 30% 68% ;}
+    75%  {border-radius: 82% 18% 83% 17% / 20% 80% 20% 80% ;}
+    100% {border-radius: 31% 69% 28% 72% / 68% 31% 69% 32%;}
+}
+.personalimg::before,.personalimg::after{
+    content: '';
+    position: absolute;
+    transform: rotate(-35deg);
+    width: 70px;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0);
+  
+}
+.personalimg::after{
+    bottom: 0px;
+    right: -15px;
+    border-top: 1px solid #646464;
+}
+.personalimg::before{
+    top: 0px;
+    left: -15px;
+    border-bottom: 1px solid #646464;
+}
+
+.personaltext{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 4em;
+
+}
+.personaltext a{
+    text-decoration: none;
+    color: #343434;
+}
+
+.personaltag{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    margin-right: 5px;
+    border: 1px #343434 solid;
+}
+/* 技能區 */
+
+.skills{
+    background-color: #ffffff;
+    margin-top: 5em;
+    margin-bottom: 3em;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+
+}
+
+.skill-icon{
+    padding: 10px;
+}
+
+.skill-icon i {
+font-size: 2em;
+margin-right: 5px;
+margin-bottom:15px ;
+color: #646464;
+}
+
+.skill-icon span{
+    margin-right: 5px;
+}
+
+.skill-text{
+    border: 0px salmon solid;
+    padding: 5px;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 1em;
+}
+
+.skill-text img{
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin-bottom: 1em;
+}
+.skill-text h4 span{
+    display: inline;
+    border: 0px solid #343434;
+    background-image: linear-gradient(rgba(0 0 0 / 0)70%,#cde078 70%);
+}
+/* 作品集區 */
+.portfolio{
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+.portfolio-button{
+    margin-bottom: 1em;
+}
+.portfolio-button button{
+    margin-right: 1em;
+    border: 0px;
+}
+.card{
+opacity: 1;
+}
+.card:hover{
+    border: 1px solid #343434;
+}
+.card-text .tag{
+    font-size: x-small;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #c5e43c85;
+    border-radius: 40px;
+    margin-right: 5px;
+}
+
+.card-text .point{
+    background-color: #f1eba9;
+}
+.card-body{
+padding: 30px;
+}
+
+/* 個人經歷區Experience */
+.experience{
+    margin-top: 4em;
+    margin-bottom: 2em;
+    background-color: rgba(255, 255, 255);
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+/* 頁尾區nav-bottom */
+.nav-bottom{
+    background-color: rgba(255, 255, 255);
+    margin-bottom: -5px;
+    border-top: #343434 1px solid;
+}
+.nav-bottom li a{
+    color: #646464;
+}
+.nav-bottom li a:hover{
+    color: #c5e43c;
+    text-decoration: underline;
+}
