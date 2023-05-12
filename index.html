@@ -8,6 +8,8 @@
     <script src="https://kit.fontawesome.com/2d5312992d.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
 </head>
   <body>
     <section id="header">
@@ -152,7 +154,7 @@
             </div>
             <div class="row">
               <!-- 作品集專區-專案一 -->
-                <div class="col-12" id="web" >
+                <div class="col-12 p1" id="web" >
                   <div class="card mb-3 " >
                     <div class="row g-0">
                       <div class="col-md-5">
@@ -180,7 +182,7 @@
                   </div>
                 </div>
                 <!-- 作品集專區-專案二 -->
-                <div class=" col-12" id="ui">
+                <div class=" col-12 p2" id="ui">
                   <div class="card mb-3" >
                     <div class="row g-0">
                       <div class="col-md-5">
@@ -202,7 +204,7 @@
                   </div>
                 </div>
                 <!-- 作品集專區-專案三 -->
-                <div class="col-12">
+                <div class="col-12 p3">
                   <div class="card mb-3" >
                     <div class="row g-0">
                       <div class="col-md-5">
@@ -223,6 +225,9 @@
                   </div>
                 </div>
              <!-- 作品集專區-專案三結束 -->
+
+             
+
             </div>
         </div>
 
@@ -281,6 +286,40 @@
             </div>
         </div>
     </section>
+    <script>
+      var controller = new ScrollMagic.Controller();
+      var scene = new ScrollMagic.Scene({
+        triggerElement:".skills",
+        triggerHook:"onLeave",
+      })
+      .setClassToggle(".p1", "show")
+      .addTo(controller);
+
+      var controller = new ScrollMagic.Controller();
+      var scene = new ScrollMagic.Scene({
+        triggerElement:".p1",
+        triggerHook:"onLeave",
+      })
+      .setClassToggle(".p2", "show")
+      .addTo(controller);
+
+      var controller = new ScrollMagic.Controller();
+      var scene = new ScrollMagic.Scene({
+        triggerElement:".p2",
+        triggerHook:"onLeave",
+      })
+      .setClassToggle(".p3", "show")
+      .addTo(controller);
+
+      var controller = new ScrollMagic.Controller();
+      var scene = new ScrollMagic.Scene({
+        triggerElement:".p3",
+        triggerHook:"onLeave",
+      })
+      .setClassToggle(".experience", "show")
+      .addTo(controller);
+
+</script>
     
 
 

@@ -216,6 +216,37 @@ opacity: 1;
 padding: 30px;
 }
 
+.p1{
+    opacity: 0;
+    transform:translateX(300px);
+}
+
+.p1.show{
+    opacity: 1;
+    transition: 1.5s ease;
+    transform:translateX(0px);
+}
+.p2{
+    opacity: 0;
+    transform:translateX(-300px);
+}
+
+.p2.show{
+    opacity: 1;
+    transition: 1s ease;
+    transform:translateX(0px);
+}
+.p3{
+    opacity: 0;
+    transform:translateX(300px);
+}
+
+.p3.show{
+    opacity: 1;
+    transition: 1s ease;
+    transform:translateX(0px);
+}
+
 /* 個人經歷區Experience */
 .experience{
     margin-top: 4em;
@@ -223,6 +254,13 @@ padding: 30px;
     background-color: rgba(255, 255, 255);
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
+    opacity: 0;
+    transform: translateY(50px);
+}
+.experience.show{
+    opacity: 1;
+    transform: translateY(0px);
+    transition: 1.5s ease;
 }
 
 .wordpress{
